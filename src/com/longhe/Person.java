@@ -23,5 +23,26 @@ public class Person {
         this.p_Name = p_Name;
     }
 
+    /*驾驶方法*/
+    public  void drivingMethod(Transport transport){
+        transport.drivingMethod();
+    }
+
+    /*交通工具装东西的方法*/
+    public  void load(Transport transport){
+        transport.load();
+    }
+
+    /*维修保养的方法*/
+    public  void maintain(Transport transport){
+        transport.maintain();
+    }
+
+    /*加油的方法*/
+    public  void addGos(Transport transport){
+        transport.addGos();
+    }
+
+
 
 }
