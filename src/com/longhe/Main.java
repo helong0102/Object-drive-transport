@@ -10,7 +10,7 @@ package com.longhe;
 public class Main {
     public static void main(String[] args) {
         Person person = new Person(18,"男","001","张三");
-        Transport transport = new Aircraft("张三","海上","17777","456","001");
-        person.driveTransport(transport);
+        AirTransport aircraft = new Aircraft("张三","海上","17777","456","001");
+        person.driveTransport(aircraft);
     }
 }

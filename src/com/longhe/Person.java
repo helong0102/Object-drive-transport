@@ -23,7 +23,7 @@ public class Person {
         this.p_Name = p_Name;
     }
 
-    public void driveTransport(Transport transport){
+    public void driveTransport(AirTransport transport){
         transport.drivingMethod();
     }
 }

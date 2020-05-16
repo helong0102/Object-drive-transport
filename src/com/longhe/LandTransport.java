@@ -7,10 +7,31 @@ package com.longhe;
  * @version: 1.0.0
  * @modified By:
  */
-public class LandTransport extends Transport{
+public class LandTransport {
+    private String ownership;
+    private String GPSPosition;
+    private String price;
+    private String dataOfPurchase;
+    private String id;
+
     public LandTransport() {
     }
+
     public LandTransport(String ownership, String GPSPosition, String price, String dataOfPurchase, String id) {
-        super(ownership, GPSPosition, price, dataOfPurchase, id);
+        this.ownership = ownership;
+        this.GPSPosition = GPSPosition;
+        this.price = price;
+        this.dataOfPurchase = dataOfPurchase;
+        this.id = id;
+    }
+
+    public void drivingMethod(){
+        System.out.println("{" +
+                "ownership='" + ownership + '\'' +
+                ", GPSPosition='" + GPSPosition + '\'' +
+                ", price='" + price + '\'' +
+                ", dataOfPurchase='" + dataOfPurchase + '\'' +
+                ", id='" + id + '\'' +
+                '}');
     }
 }
